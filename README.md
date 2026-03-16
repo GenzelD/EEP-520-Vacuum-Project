@@ -29,6 +29,16 @@ Another issue I tackled was that the dirt agents were implemented to be destroye
 
 To fix this, the front sensor needed to detect that the thing infront of it was dirt and not turn. With the condition (!= "dirt"), this behavior was fixed.
 
+## Battery issue
+Initially I implemented the battery to be based in the VaccumController class. This gave me issues with interacting with the battery in the State classes as the compiler was complaining about not knowing what the battery is. This is because the controller class is on the bottom and will complile after the state classes. I tried to move the controller class above the other classes, but since the controller class depends on the state classes, this gave the same errors but for calling the states too early.
+
+The solution, while not the best, was to create a global battery variable so that the variable can be changed by all of the other classes. A better solution would be to create a class that the other classes can inherit.
+
+## Forward state gets the robot stuck
+A section of my states is the return to dock state. Although this state makes the robot B-line towards the docking station. To avoid obstacles, the robot needs to be able to transition back into the avoid state. There are 2 issues, after the robot avoids it will B-line for the dock and if the robot forces the forward move it may get stuck.
+
+To solve the first issue, I implemented a forward state that will force the robot to move forward for a little to avoid the obstacle before aiming for the dock again. Although because of this forced forward state, the robot can get stuck going forward. So to solve that, during the forward state, if it detects that it's stuck, it initiates a backward state. To improve this, I could implemnet a slight turn during the backwards state to help the robot clear the obstacle quickly.
+
 # Install and Build
 ## Prerequisites
 Have the Docker software installed and ready to be used. This will go over how to obtain the container.
