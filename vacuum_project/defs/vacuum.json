@@ -1,7 +1,7 @@
 {
     "name": "Vacuum",
     "type": "dynamic",
-    "description": "Replace this string with a description",
+    "description": "The robot agent that will act as the vacuum, collecting dirt agents",
     "shape": [
         { "x": -10, "y": 10 },
         { "x": 10, "y": 10 },

@@ -1,7 +1,7 @@
 {
     "name": "dirt",
     "type": "static",
-    "description": "Replace this string with a description",
+    "description": "An agent that will be used as particles that the robot will 'pick up' by coliding with it",
     "shape": [
         { "x": -5, "y": 5 },
         { "x": 5, "y": 5 },
