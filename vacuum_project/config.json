@@ -1,0 +1,161 @@
+{
+
+    "name": "My Enviro Project",
+    "ip": "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [],
+
+    "agents": [
+        {
+            "definition": "defs/vacuum.json",
+            "style": { "fill": "lightgreen", "stroke": "black" },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "theta": 0
+            }
+        },
+        
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -200, 
+                "y": 0, 
+                "theta": 0
+            }
+        },
+
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 200, 
+                "y": -100, 
+                "theta": 0
+            }
+        },
+
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -273, 
+                "y": 102, 
+                "theta": 0
+            }
+        },
+
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 238, 
+                "y": 178, 
+                "theta": 0
+            }
+        },
+
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": 100, 
+                "y": 0, 
+                "theta": 0
+            }
+        },
+
+        {
+            "definition": "defs/dirt.json",
+            "style": { "fill": "brown", "stroke": "black" },
+            "position": {
+                "x": -200, 
+                "y": 0, 
+                "theta": 0
+            }
+        }
+    ],
+
+    "statics": [
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -200 },
+                { "x": -350,  "y": 200 },
+                { "x": -340,  "y": 200 },
+                { "x": -340, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": 350, "y": -200 },
+                { "x": 350,  "y": 200 },
+                { "x": 340,  "y": 200 },
+                { "x": 340, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": 200 },
+                { "x": 350,  "y": 200 },
+                { "x": 350,  "y": 190 },
+                { "x": -350, "y": 190 }
+            ]
+        },
+        {
+            "style": { "fill": "gray", "stroke": "none" },
+            "shape": [
+                { "x": -350, "y": -200 },
+                { "x": 350,  "y": -200 },
+                { "x": 350,  "y": -190 },
+                { "x": -350, "y": -190 }
+            ]
+        },
+
+        {
+            "style": { "fill": "brown", "stroke": "black" },
+            "shape": [
+                { "x": -40, "y": 90 },
+                { "x": -40, "y": 150 },
+                { "x": 40, "y": 150 },
+                { "x": 40, "y": 90 }
+            ]
+        },
+
+        {
+            "style": { "fill": "darkbrown", "stroke": "black" },
+            "shape": [
+                { "x": 200, "y": 120 },
+                { "x": 200, "y": 185 },
+                { "x": 330, "y": 185 },
+                { "x": 330, "y": 120 }
+            ]
+        },
+
+        {
+            "style": { "fill": "red", "stroke": "black" },
+            "shape": [
+                { "x": -80, "y": -80 },
+                { "x": -80, "y": -40 },
+                { "x": -40, "y": -40 },
+                { "x": -40, "y": -80 }
+            ]
+        },
+
+        {
+            "style": { "fill": "red", "stroke": "black" },
+            "shape": [
+                { "x": 60, "y": -80 },
+                { "x": 60, "y": -40 },
+                { "x": 100, "y": -40 },
+                { "x": 100, "y": -80 }
+            ]
+        }
+
+    ]
+
+}
